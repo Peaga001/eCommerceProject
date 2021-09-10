@@ -2,7 +2,8 @@
 
     body{
     
-        background-color:#00BFFF;
+        background-color:#20B2AA;
+        font-family: 'IBM Plex Sans Arabic', sans-serif;
     }
 
     .container{
@@ -18,13 +19,13 @@
     }
 
     form input{
-        border: 1px solid #00BFFF;
+        border: 1px solid #20B2AA;
 
     }
 
     #bt_voltar{
 
-        background-color: #00BFFF;
+        background-color: #20B2AA;
         color: white;
         padding: 10px;
         font-size: 15px;
@@ -34,7 +35,7 @@
 
     #bt_enviar{
         border-style: none;
-        background-color: #00BFFF;
+        background-color: #20B2AA;
         color: white;
         padding:10px;
         margin-top: 20px;
@@ -58,7 +59,7 @@
         padding: 10px;
     }
     .cabecalho{
-        background-color: #00BFFF;
+        background-color: #20B2AA;
         color: white;
 
 
@@ -70,6 +71,10 @@
     }
 
 </style>
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200&display=swap" rel="stylesheet"> 
+
+<?php require_once "../lib/verify_login.php";?>
 
 <div class="container">
 

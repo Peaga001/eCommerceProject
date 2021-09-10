@@ -15,6 +15,8 @@
     }
 
     $mnsg = getLogin();
-    echo $mnsg;
+
+    var_dump($mnsg);
+
 
 ?>

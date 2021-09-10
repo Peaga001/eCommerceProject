@@ -2,62 +2,34 @@
 <html lang="pt-br">
 <head>
 
-    <style>
-
-        body{
-            background-color:white;
-            width: 100%;
-            height: 960px;
-        }
-
-        .container{
-
-            position: relative;
-            background-color:#00BFFF;
-            color: white;
-            text-align: center;
-            width: 100%;
-            height: 80px;
-            border: 1px solid;
-
-        }
-
-        footer{
-
-            background-color: #00BFFF;
-            width: 100%;
-            height: 300px;
-            position: relative;
-            margin-top: 35%; 
-            line-height: 250px;
-            border-radius: 1%;
-        }
-
-       
-
-    </style>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="components/nav/styleNav.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
 
     <title>Index</title>
 
 </head>
 <body>
-    <div class="container">
 
-        <h1 class = "menu">
-            <a href="views/view_aberturaDeConta.php" style="color: white; text-decoration:none;">Abertura de Conta</a> ||    
-            <a href="views/view_Login.php" style="color: white; text-decoration:none;">Login</a> ||
-            <a href="views/view_allContas.php" style="color: white; text-decoration:none;">Relatório</a>
-        </h1>
+<?php require_once "lib/verify_Index.php";?>    
 
-        <footer class="rodape">
-            <h1>Rodapé</h1>
-        </footer>
-
+    <div class="nav">
+        <?php require_once "components/nav/nav.php";?>
     </div>
+
+    <div class="banner">
+        <br id="br">
+        <h1>Seu Banco</h1>
+        <h3>Ta esperando o que pra investir?</h3>
+    </div>
+
+    <?php require_once "components/footer/footer.php";?>
 
 
 </body>

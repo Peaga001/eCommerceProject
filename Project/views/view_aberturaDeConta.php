@@ -2,7 +2,8 @@
 
     body{
 
-        background-color:#00BFFF;
+        background-color:#20B2AA;
+        font-family: 'IBM Plex Sans Arabic', sans-serif;
     }
 
     form{
@@ -39,7 +40,7 @@
         
         font-size: 25px;
         border: 1px solid white;
-        background-color:#00BFFF;
+        background-color:#20B2AA;
         color: white;
         border-radius: 5px;
         margin-bottom: 5%;
@@ -50,7 +51,7 @@
         margin-top: 5%;
         position: relative;
         font-size: 20px;
-        background-color:#00BFFF;
+        background-color:#20B2AA;
         color: white;
         border: 3px solid white;
         border-radius: 5px;
@@ -63,9 +64,9 @@
     
 </style>
 
-<?php 
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200&display=swap" rel="stylesheet"> 
 
-?>
+<?php require_once "../lib/verify_login.php";?>
 
 <form action="" method="post">
 
