@@ -23,22 +23,13 @@
 
     }
 
-    #bt_voltar{
-
-        background-color: #20B2AA;
-        color: white;
-        padding: 10px;
-        font-size: 15px;
-        border-radius: 3%;
-        text-decoration: none;
-    }
-
     #bt_enviar{
         border-style: none;
         background-color: #20B2AA;
         color: white;
         padding:10px;
-        margin-top: 20px;
+        margin-top: 18px;
+        margin-bottom: -1%;
         border-radius: 3%;
         font-size: 20px;
         cursor: pointer;
@@ -70,6 +61,14 @@
         text-align: center;
     }
 
+    #bt_voltar{
+        border-bottom: 3px solid #20B2AA;
+    }
+
+    #bt_voltar img{
+        width: 40px;
+    }
+
 </style>
 
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200&display=swap" rel="stylesheet"> 
@@ -95,7 +94,7 @@
     </form>
 
 
-    <a href="../index.php" id="bt_voltar">Voltar</a>
+    <a href="../index.php" id="bt_voltar"><img src="../assets/imgs/icons/voltar_icon.png"></a>
 
     <?php
         require_once "../lib/host.php";

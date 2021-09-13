@@ -25,6 +25,31 @@ VALUES ('pedroLogin','pedroSenha','Pedro','12345678910',Now(),'0001','1'),
 	   ('luanaLogin','luanaSenha','Luana','12345678917',Now(),'0001','8'),
 	   ('brenoLogin','brenoSenha','Breno','12345678918',Now(),'0001','9'),
 	   ('brunoLogin','brunoSenha','Bruno','12345678919',Now(),'0001','10');
+	   
+CREATE TABLE Saldo(
+
+	id_saldo int  PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	saldo varchar(100) NOT NULL,
+	credito varchar(100) NOT NULL
+);
+	   
+	   
+	   
+	INSERT into Saldo 
+	(id_saldo,saldo,credito)
+	VALUES
+	(1200,50),
+	(3800,1200),
+	(1800,500),
+	(1200,3500),
+	(389,1220),
+	(3852,1920),
+	(3870,1020),
+	(9000,1020),
+	(125,1230),
+	(338,800),
+	(950,1800),
+	(150,3500);
 
 /*
 

@@ -71,17 +71,17 @@
 
         <div class="form">
 
-            <label for="login">Login</label><br>
+            <label for="login">Insira seu cpf:</label><br>
                 <input id="login" type="text" name="login"><br>
             
 
-            <label for="senha">Senha</label><br>
+            <label for="senha">e seu Login:</label><br>
                 <input id="senha" type="password" name="senha">
             
 
             <input type="submit" id="bt_entrar" name="enviar" value="Entrar">
 
-            <p><a href="view_resgataSenha.php">Esqueci minha senha / </a><a href="view_aberturaDeConta.php"> Criar Conta</a></p>
+            <p><a href="view_Login.php">Login / </a><a href="view_aberturaDeConta.php"> Criar Conta</a></p>
 
 
             <a href="../index.php" id="bt_voltar"><img src="../assets/imgs/icons/voltar_icon.png"></a>
@@ -89,20 +89,3 @@
         </div>
 
     </form>
-
-    <?php
-
-        require_once "../lib/host.php";
-        require_once "../models/loginModel.php";
-        require_once "../controllers/loginController.php";
-                
-
-        
-
-       
-
-       
-
-
-
-

@@ -48,17 +48,16 @@
 
     #bt_voltar{
 
-        margin-top: 5%;
         position: relative;
-        font-size: 20px;
-        background-color:#20B2AA;
-        color: white;
-        border: 3px solid white;
+        border-bottom: 3px solid #20B2AA;
         border-radius: 5px;
-        padding: 5px;
         text-decoration: none;
-        left: 37%;
+        left: 43%;
 
+    }
+
+    #bt_voltar img{
+        width: 50px;
     }
 
     
@@ -90,6 +89,8 @@
 
         <input type="submit" id="bt_enviar" name="enviar" value="Enviar">
 
+        <p><a href="view_resgataSenha.php">Esqueci minha senha / </a><a href="view_Login.php"> Login</a></p>
+
         <?php 
 
             require_once "../lib/host.php"; 
@@ -100,7 +101,7 @@
         ?>
 
 
-    <br><a href="../index.php" id="bt_voltar">Voltar -></a>
+    <br><a href="../index.php" id="bt_voltar"><img src="../assets/imgs/icons/voltar_icon.png"></a>
 
     </div>
 

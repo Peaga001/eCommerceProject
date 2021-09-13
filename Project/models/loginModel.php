@@ -4,7 +4,7 @@
 
         $conn = Connection::getConn();
 
-        $sql = "SELECT id,nome FROM Users WHERE login = :login and senha = :senha";
+        $sql = "SELECT id,nome,adm FROM Users WHERE login = :login and senha = :senha";
         $sql = $conn->prepare($sql);
         $sql->bindValue(':login',$login, PDO::PARAM_STR);
         $sql->bindValue(':senha',$senha, PDO::PARAM_STR);
@@ -18,7 +18,15 @@
             session_start();
             $_SESSION['id']     = $result['id'];
             $_SESSION['nome']   = $result['nome'];
-            header('Location: ../views/view_home.php');
+            $_SESSION['adm']     = $result['adm'];
+
+            if ($_SESSION['adm']=='s'){
+                header('Location: ../index.php');
+            }
+
+            else {
+                header('Location: ../views/view_home.php');
+            }
 
 
         }
