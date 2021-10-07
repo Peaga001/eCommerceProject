@@ -32,13 +32,25 @@
                             <input type="text" class="form-control mt-1" id="login" name="login" placeholder="Insira seu Login"><br>
                         <label for="inputsenha">Senha</label>
                             <input type="password" class="form-control mt-1" id="senha" name="senha" placeholder="Insira sua Senha">
-                        <input class="btn btn-success" type="submit" id="bt_enviar" name="bt_enviar" value="Entrar" style="width: 100%; margin-top:5%">
+                        <input class="btn btn-success" type="submit" id="bt_entrar" name="bt_entrar" value="Entrar" style="width: 100%; margin-top:5%">
                         <p style="text-align: center;"><a href="esqueci_minha_senha.php" style="text-decoration: none; color:black">Esqueci minha senha </a> / <a href="create_account.php" style="text-decoration: none; color:black">Criar Conta</a></p>
                     </div>
                 </div>
             </form>
         </div>
     </div>
+
+
+    <?php 
+
+        require_once './lib/host.php';
+        require_once './models/crud/loginModel.php';
+        require_once './controllers/crud/loginController.php';
+
+        $login = new loginController;
+        $login->login($_POST);
+
+    ?>
 
 
 

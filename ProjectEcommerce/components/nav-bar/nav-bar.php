@@ -55,23 +55,46 @@ print'<nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block
                                 <i class="fa fa-fw fa-search"></i>
                             </div>
                         </div>
-                    </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                    </div>';
+
+                    session_start();
+    
+                    if($_SESSION['nome']!=""){
+                
+                        $nome = explode(' ',$_SESSION['nome']);
+                        $nome = $nome[0];
+                        $id   = $_SESSION['id'];
+                        $adm  = $_SESSION['adm'];
+                
+                        print'<a class="nav-icon position-relative text-decoration-none" style="color:#FF4500">Olá '.$nome.'!</a> &nbsp;';
+                        print'<a class="nav-icon position-relative text-decoration-none" style="color:#FF4500" href="logout.php">Sair</a>';
+                
+                
+                    }
+                
+                    else{
+                        
+                        print'<a class="nav-icon position-relative text-decoration-none" href="login.php">
+                            <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                            <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark" ></span>
+                        </a>';
+                
+                    }
+                              
+
+
+                    print'<a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
                     </a>
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
                     </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="login.php">
-                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark" ></span>
-                    </a>
+
+                    </div>
                 </div>
             </div>
-
-        </div>
-    </nav>';
+        </nav>';
 
 
 

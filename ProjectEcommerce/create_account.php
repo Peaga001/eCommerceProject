@@ -80,7 +80,7 @@
                     
                 </div>    
                     
-                    <input class="btn btn-success" type="submit" id="bt_enviar" name="bt_enviar" value="Entrar" style="width: 100%; margin-top:5%; font-size:20px">
+                    <input class="btn btn-success" type="submit" id="bt_enviar" name="bt_enviar" value="Criar Conta" style="width: 100%; margin-top:5%; font-size:20px">
                         <p style="text-align: center;"><a href="esqueci_minha_senha.php" style="text-decoration: none; color:black">Esqueci minha senha </a> / <a href="login.php" style="text-decoration: none; color:black">Entrar</a></p>
                     </div>
                 </div>
