@@ -1,4 +1,3 @@
-Welcome to the eCommerceProject wiki!
 ![1](https://user-images.githubusercontent.com/83319306/156959307-c34c9782-5d91-40d7-bcd1-842ee049b98a.png)
 ![2](https://user-images.githubusercontent.com/83319306/156959315-03817b78-b368-4559-a380-9ec22cfda52e.png)
 ![3](https://user-images.githubusercontent.com/83319306/156959320-fc24ae36-2c89-47d9-ba6d-54fc6ecf6cff.png)
